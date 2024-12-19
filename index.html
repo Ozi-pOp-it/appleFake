@@ -31,7 +31,7 @@
 
       .navbar {
         background-color: rgb(0, 0, 0);
-
+        height: 50px;
       }
       
 
@@ -52,42 +52,45 @@
       }
 
       .navbar-toggler {
-  border: none;
-}
+      border: none;
+      } 
 
-.navbar-toggler-icon {
-  background-image: none; /* Убираем стандартное изображение */
-  width: 30px; /* Ширина линии */
-  height: 3px; /* Толщина линии */
-  background-color: white; /* Цвет линии */
-  position: relative;
-}
+      .navbar-toggler-icon {
+      background-image: none; 
+      width: 30px; 
+      height: 3px; 
+      background-color: white; 
+      position: relative;
+      }
 
-.navbar-toggler-icon::before,
+      .navbar-toggler-icon::before,
+      .navbar-toggler-icon::after {
+      content: '';
+      position: absolute;
+      width: 30px; 
+      height: 3px; 
+      background-color: white;
+      left: 0;
+      }
+
+      .navbar-toggler-icon::before {
+      top: -8px; 
+      }
+
 .navbar-toggler-icon::after {
-  content: '';
-  position: absolute;
-  width: 30px; /* Ширина линии */
-  height: 3px; /* Толщина линии */
-  background-color: white; /* Цвет линии */
-  left: 0;
-}
-
-.navbar-toggler-icon::before {
-  top: -8px; /* Расстояние между верхней линией и основной */
-}
-
-.navbar-toggler-icon::after {
-  bottom: -8px; /* Расстояние между нижней линией и основной */
+  bottom: -8px; 
 }
 
       .card {
-        background-color: #0c0c0c;
+        background-color: #000000;
 
       }
 
       .card-img-top {
         border-radius: 1px 1px 0 0;
+        margin-top: 25px;
+        max-width: calc(100% - 35px); 
+        margin-left: 20px;
       }
 
       .card-title {
@@ -120,7 +123,7 @@
       }
 
       .carousel-item img {
-        height: 850px;
+        height: 855px;
         object-fit: cover;
         position: relative;
 
@@ -131,7 +134,7 @@
         text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
       }
 
-      /* Стили для футера */
+
       footer {
         background-color: #1f1f1f;
         padding: 2rem 0;
@@ -159,13 +162,13 @@
       }
       
 
-      /* Адаптивность */
+  
       .container {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-start;
-
+        
       }
 
       .row {
@@ -197,21 +200,11 @@
         }
       }
       .navbar {
-  background-color: black; /* Черный фон */
-  padding: 10px 15px;
-}
+      background-color: black; 
+      padding: 10px 15px;
+      }
 
-/* Белая кнопка назад */
-.navbar .back-button {
-  color: white; /* Белый цвет для кнопки */
-  font-size: 18px;
-  text-decoration: none;
-}
-
-/* Отступ для основного контента, чтобы не перекрывался навбаром */
-body {
-  padding-top: 56px; /* Задаем отступ, чтобы контент не перекрывался навбаром */
-}
+  
     </style>
   </head>
   <body>
@@ -284,7 +277,7 @@ body {
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md- g-4">
         <div class="col">
           <div class="card h-100">
-            <img src="https://frankfurt.apollo.olxcdn.com/v1/files/q3yd84pv94652-KZ/image;s=2000x2000" class="card-img-top" alt="VIP Ticket">
+            <img src="https://frankfurt.apollo.olxcdn.com/v1/files/q3yd84pv94652-KZ/image;s=2000x2000" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title text-center">Iphone 15 pro max</h5>
 
@@ -296,7 +289,7 @@ body {
         </div>
         <div class="col">
           <div class="card h-100">
-            <img src="https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/iphone-16.png" class="card-img-top" alt="VIP Ticket">
+            <img src="https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/iphone-16.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title text-center">Iphone 16</h5>
 
@@ -361,7 +354,7 @@ body {
           </div>
           <div class="col">
             <div class="card h-100">
-              <img src="https://wallpaperswide.com/download/imac_2017_concept-wallpaper-1280x1280.jpg" class="card-img-top" alt="Toyota Corolla">
+              <img src="https://itc.ua/wp-content/uploads/2021/12/imac.jpg" class="card-img-top" alt="Toyota ">
               <div class="card-body">
                 <h5 class="card-title">Imac</h5>
                 <p class="card-text">best pc</p>
@@ -381,6 +374,7 @@ body {
           </div>
         </div>
       </div>
+      
     </section>
 
 
